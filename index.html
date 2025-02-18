@@ -6,31 +6,45 @@
     <title>Lina Osama - CV</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
+            width: 90%;
+            max-width: 900px;
             background: white;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .section {
+            margin-top: 20px;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #f9f9f9;
+            border-radius: 8px;
         }
-        h1, h2, h3 {
-            color: #333;
-        }
-        .contact-details, .section {
-            margin-bottom: 20px;
+        .section h2 {
+            margin-bottom: 10px;
+            color: #007BFF;
         }
         ul {
-            list-style: none;
+            list-style-type: none;
             padding: 0;
         }
         ul li::before {
             content: "\2022";
-            color: #333;
+            color: #007BFF;
             font-weight: bold;
             display: inline-block; 
             width: 1em;
@@ -38,34 +52,44 @@
         }
         .portfolio {
             margin-top: 20px;
-            padding: 10px;
-            background-color: #e8e8e8;
             text-align: center;
         }
         .portfolio a {
             text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
+            color: white;
+            background: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1, h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Lina Osama</h1>
-        <h2>Architecture Engineer</h2>
+        <div class="header">
+            <h1>Lina Osama</h1>
+            <h2>Architecture Engineer</h2>
+        </div>
         
-        <div class="contact-details">
+        <div class="section">
+            <h2>Contact Details</h2>
             <p><strong>Phone:</strong> +20 100 988 2872</p>
             <p><strong>Email:</strong> osamalina46@gmail.com</p>
-            <p><strong>Address:</strong> Al-Mansoura, Mansoura, Egypt</p>
-            <p><strong>Date of Birth:</strong> 5-2-2004</p>
-            <p><strong>Nationality:</strong> Egyptian</p>
             <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lina-osama-3088a8286" target="_blank">Lina Osama</a></p>
         </div>
         
         <div class="section">
             <h2>Profile</h2>
-            <p>A passionate and dedicated architecture student with expertise in 3D modeling, interior and exterior design, and planning. Skilled in industry-standard software and committed to delivering high-quality designs with creativity and precision.</p>
+            <p>Passionate architecture student with expertise in 3D modeling, interior and exterior design, and planning. Skilled in industry-standard software and committed to delivering high-quality designs with creativity and precision.</p>
         </div>
         
         <div class="section">
@@ -77,10 +101,10 @@
         <div class="section">
             <h2>Certifications & Courses</h2>
             <ul>
-                <li>3D Modeling for Interior Design – Information Technology Institute (ITI)</li>
+                <li>3D Modeling for Interior Design – ITI</li>
                 <li>Revit Course – Excellence Gate</li>
-                <li>AutoCAD Course – Information Technology Institute</li>
-                <li>3D Max Modeling Course – Information Technology Institute</li>
+                <li>AutoCAD Course – ITI</li>
+                <li>3D Max Modeling – ITI</li>
                 <li>V-Ray Rendering – Advanced Training</li>
                 <li>Freehand Sketching & Planning Design</li>
                 <li>Exterior Design Training</li>
@@ -113,22 +137,11 @@
             </ul>
         </div>
         
-        <div class="section">
-            <h2>Extracurricular Activities</h2>
-            <ul>
-                <li>Participated in multiple architectural competitions and design challenges.</li>
-                <li>Active member of the university’s architecture and design club.</li>
-                <li>Engaged in hands-on projects, developing practical experience in real-world design applications.</li>
-            </ul>
-        </div>
-        
         <div class="portfolio">
             <h2>Portfolio</h2>
-            <p>View my portfolio showcasing my projects:</p>
-            <p><a href="PORTFOLIO.pdf" target="_blank">Download Portfolio (PDF)</a></p>
+            <p>Explore my portfolio showcasing my architectural projects:</p>
+            <a href="PORTFOLIO.pdf" target="_blank">Download Portfolio (PDF)</a>
         </div>
     </div>
 </body>
 </html>
-
-
